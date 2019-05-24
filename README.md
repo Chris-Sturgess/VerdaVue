@@ -2,7 +2,7 @@ A test using the Vue Router Plugin
 
 Goals:
 
-O Home page with 2 links
+X Home page with 2 links
 O First link goes to hacker news page
 O Second link is random cat page
 O Use api from https://github.com/tastejs/hacker-news-pwas/blob/master/docs/api.md
