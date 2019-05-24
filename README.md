@@ -1,29 +1,18 @@
-# verda-router
+A test using the Vue Router Plugin
 
-## Project setup
-```
-npm install
-```
+Goals:
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+O Home page with 2 links
+O First link goes to hacker news page
+O Second link is random cat page
+O Use api from https://github.com/tastejs/hacker-news-pwas/blob/master/docs/api.md
+O Display top 25 stories from 'News' in a list form
+O Title
+O User
+O Formatted date
+O Clicking item goes to a new page where fields are dynamically displayed
+O Also a raw JSON format is displayed under the list of fields
+O A third page where an image from https://aws.random.cat/meow is displayed in the center
+O Button to request new image and display over old
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+O = Unfinished, X = Finished
