@@ -2,14 +2,14 @@
 	<div class="news">
 		<h1>Recent News</h1>
 		<div class="loading">
-			<p v-if="loading">Loading...</p>
-			<button v-else v-on:click="fetchNews">Refresh</button>
+			<button v-if="loading" class="loading-button" disabled>Loading...</button>
+			<button v-else v-on:click="fetchImage">Refresh</button>
 		</div>
 		<div class="news-list">
 			<div v-if="error" class="error">
 				{{ error }}
 			</div>
-			<div v-else v-bind:key="index" v-for="(story, index) in stories">
+			<div class="story" v-else v-bind:key="index" v-for="(story, index) in stories">
 				<h2>
 					<router-link :to="{name : 'item', query : {story: story.rawJSON}}">{{ story.title }}</router-link>
 				</h2>
@@ -70,21 +70,3 @@ export default {
 	}
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-	margin: 40px 0 0;
-}
-ul {
-	list-style-type: none;
-	padding: 0;
-}
-li {
-	display: inline-block;
-	margin: 0 10px;
-}
-a {
-	color: #42b983;
-}
-</style>

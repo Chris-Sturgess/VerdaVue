@@ -5,6 +5,7 @@ import News from './components/News.vue'
 import Cat from './components/Cat.vue'
 import About from './components/About.vue'
 import Item from './components/Item.vue'
+import '@/assets/main.css'
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
@@ -32,11 +33,9 @@ Vue.mixin({
 			}
 
 			xhr.send()
-		},
+		}
 	}
 })
-
-import "@/assets/main.css"
 
 new Vue({
 	router,

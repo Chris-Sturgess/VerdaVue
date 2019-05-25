@@ -2,15 +2,14 @@
 	<div class="cat">
 		<h1>Cat</h1>
 		<div class="loading">
-			<p v-if="loading">Loading...</p>
+			<button v-if="loading" class="loading-button" disabled>Loading...</button>
 			<button v-else v-on:click="fetchImage">New Cat</button>
 		</div>
-		
 		<div>
 			<div v-if="error" class="error">
 				{{ error }}
 			</div>
-			<div v-else class="cat-image" v-if="image" >
+			<div v-else class="cat-image">
 				<img :src="image" />
 			</div>
 		</div>
@@ -23,7 +22,7 @@ export default {
 		return {
 			loading: false,
 			image: null,
-			error: null,
+			error: null
 		}
 	},
 
@@ -58,21 +57,3 @@ export default {
 	}
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-	margin: 40px 0 0;
-}
-ul {
-	list-style-type: none;
-	padding: 0;
-}
-li {
-	display: inline-block;
-	margin: 0 10px;
-}
-a {
-	color: #42b983;
-}
-</style>

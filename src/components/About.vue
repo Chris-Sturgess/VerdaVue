@@ -11,7 +11,7 @@
 			# Github Link
 		</p>
 		<p>
-			www.christophersturgess.com
+			<a href="http://www.christophersturgess.com">www.christophersturgess.com</a>
 		</p>
 	</div>
 </template>
