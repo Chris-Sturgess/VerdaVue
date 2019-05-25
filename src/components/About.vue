@@ -8,7 +8,7 @@
 			Written May 24, 2019
 		</p>
 		<p>
-			# Github Link
+			<a href="https://github.com/Chris-Sturgess/VerdaVue">https://github.com/Chris-Sturgess/VerdaVue</a>
 		</p>
 		<p>
 			<a href="http://www.christophersturgess.com">www.christophersturgess.com</a>
