@@ -14,5 +14,3 @@ X First link goes to hacker news page
 X Second link is random cat page  
 	X A third page where an image from https://aws.random.cat/meow is displayed in the center  
 	X Button to request new image and display over old  
-
-O = Unfinished, X = Finished
