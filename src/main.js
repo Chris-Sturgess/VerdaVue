@@ -11,6 +11,7 @@ Vue.config.productionTip = false
 Vue.use(VueRouter)
 
 const routes = [
+	{ path: '*', redirect: '/news' },
 	{ path: '/news', component: News },
 	{ path: '/cat', component: Cat },
 	{ path: '/about', component: About },
