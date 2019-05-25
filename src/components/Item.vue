@@ -18,8 +18,8 @@
 export default {
 	data () {
 		return {
-			story: JSON.parse(this.$route.query.story),
-			rawJSON: this.$route.query.story
+			story: this.$route.query,
+			rawJSON: JSON.stringify(this.$route.query)
 		}
 	}
 }

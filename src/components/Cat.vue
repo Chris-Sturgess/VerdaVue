@@ -2,7 +2,7 @@
 	<div class="cat">
 		<h1>Cat</h1>
 		<div class="loading">
-			<button v-if="loading" class="loading-button" disabled>Loading...</button>
+			<button v-if="loading" disabled>Loading...</button>
 			<button v-else v-on:click="fetchImage">New Cat</button>
 		</div>
 		<div>
@@ -50,8 +50,8 @@ export default {
 		fetchImage () {
 			this.loading = true
 			this.error = null
+			// Don't reset image because you want to see a cat while loading
 
-			// Get News
 			this.getJSON('https://aws.random.cat/meow', this.callback)
 		}
 	}
