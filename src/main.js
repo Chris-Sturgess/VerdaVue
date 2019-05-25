@@ -3,18 +3,40 @@ import VueRouter from 'vue-router'
 import App from './App.vue'
 import News from './components/News.vue'
 import Cat from './components/Cat.vue'
+import About from './components/About.vue'
+import Item from './components/Item.vue'
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
 
 const routes = [
 	{ path: '/news', component: News },
-	{ path: '/cat', component: Cat }
+	{ path: '/cat', component: Cat },
+	{ path: '/about', component: About },
+	{ path: '/item', component: Item, name: 'item', props: true }
 ]
 
 const router = new VueRouter({
 	routes
 })
+
+Vue.mixin({
+	methods: {
+		getJSON (url, callback) {
+			const xhr = new XMLHttpRequest()
+			xhr.open('GET', url, true)
+			xhr.responseType = 'json'
+
+			xhr.onload = () => {
+				callback(xhr)
+			}
+
+			xhr.send()
+		},
+	}
+})
+
+import "@/assets/main.css"
 
 new Vue({
 	router,
